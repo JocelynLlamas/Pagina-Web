@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    background: -webkit-linear-gradient(65deg, #9d1b61, #ffb2d0);
+    /*background-image: url("../static/fondo.png");*/
+    padding: 0px;
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+
+    transition: all .5s ease-out;
+}
+
+a:hover{
+    color: #f30258 !important;
+}
+
+.ubicacion{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 1.3em;
+    margin-top: 25px;
+    margin-left: 15px;
+    padding-bottom: 66px;
+
+    transition: all .5s ease-out;
+}
+
+.ubicacion:hover{
+    color: #f6cddf;
+}
+
+.titulo{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+}
+
+.img{
+    border-radius: 50px !important;
+    width: 20%;
+}
+
+.logo {
+    width: 55%;
+    float: left;
+}
+.container{
+    margin-bottom: 3%;
+}
+
+::placeholder{
+    color: white;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 90%;
+}
+
+.boton{
+    background-color: #f6cddf;
+    border-radius: 50px;
+    border: none;
+    width: 20%;
+    font-size: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 1%;
+
+    transition: all .5s ease;
+}
+
+.boton:hover {
+    background-color: white;
+}
+
+.iconoSeleccionado{
+    color: #f30258;
+    transition: all .5s ease;
+}
+
+.iconoNoSeleccionado{
+    color: white;
+    transition: all .5s ease;
+}
+
+.boton:hover .iconoNoSeleccionado{
+    color: #ffa6c8;
+}
+
+.containerProducto{
+    border-radius: 50px;
+    align-content: center;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    margin-top: 5%;
+    padding-top: 1%;
+    width: 100%;
+
+}
+
+.nombre{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.texto{
+    font-size: 1.3em;
+}
+
+.menu{
+    text-align: center;
+    background-color: #f6cddf;
+    color: white !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+    padding: 5px;
+    font-size: 100%;
+    width: 20%;
+    border-radius: 50px;
+    border: none;
+    margin-bottom: 1%;
+}
+
+.cajaInformacion{
+    text-align: center;
+    background-color: #e7a6cf;
+    font-family: 'Poppins', sans-serif;
+    padding: 5px;
+    font-size: 100%;
+    width: 20%;
+    border-radius: 50px;
+    border: none;
+    margin-bottom: 1%;
+}
+
+.tip{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: lighter;
+    font-size: 1em;
+    text-align: center;
+}

@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    background: -webkit-linear-gradient(65deg, #9d1b61, #ffb2d0);
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.img {
+    width: 55%;
+    float: left;
+}
+
+.icono {
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+
+    transition: all 0.5s ease;
+}
+
+.icono:hover {
+    color: #f30258;
+}
+
+.fondo {
+    background: transparent;
+}
+
+.containerIconos {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+
+.barraBusqueda {
+    text-align: center;
+    background-color: #f6cddf !important;
+    width: 500px !important;
+    border-radius: 50px !important;
+    border: none !important;
+    font-family: 'Poppins', sans-serif;
+}
+
+::placeholder{
+    color: white !important;
+}
+
+.menu {
+    padding-top: 20px;
+    margin-top: 0px;
+}
+
+.item {
+    float: left;
+    width: 100px;
+    border-right: 1px solid white;
+}
+
+.item a {
+    background-color: transparent;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.2em;
+    font-weight: lighter;
+
+    transition: all .5s ease-out;
+}
+
+.item a:hover {
+    background-color: #f30258;
+    color: #ffffff;
+}
+
+.subMenu {
+    width: 100px;
+    background-color: #e7a6cf;
+    position: absolute;
+    visibility: hidden;
+    display: none;
+    z-index: 2;
+}
+
+.subMenu a {
+    font-family: 'Poppins', sans-serif;
+    background-color: #e7a6cf;
+    font-weight: lighter;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+    transition: all .5s ease-out;
+}
+
+.subMenu a:hover {
+    background-color: #ffa6c8;
+    color: white;
+}
+
+.menuUsuario {
+    background-color: #e7a6cf;
+}
+
+.menuUsuario a {
+    font-family: 'Poppins', sans-serif;
+    background-color: #e7a6cf;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.imagenSlider{
+    width: 100% !important;
+    height: 780px !important;
+}
+
+.tituloGaleria{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 2.7em;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.cajaContenedora {
+    width: 451px;
+    height: 451px;
+    overflow: hidden;/*INDICA A LA CAJA QUE TODO LO QUE NO CABE EN SU ESPACIO NO LO PINTE*/
+    display: inline-block;
+    margin-right: 10px;
+    align-content: center !important;
+    align-items: center !important;
+}
+
+.imagenGaleria{
+    transform: scale(1);
+    width: 100%;
+    transition: transform 1s;
+}
+
+.transparencia {
+    width: 101.5%;
+    height: 122.9%;
+    background-color: #ffa6c8;
+    position: relative;
+    top: -550px;
+    opacity: 0;
+    left: -3px;
+    /*OPACIDAD INICIAL*/
+    transition: opacity 1s;
+}
+
+/*DEBE PARTIR DESDE LA PARTE DE ARRIBA PARA QUE VAYA BAJANDO*/
+.cajaContenedoraTexto{
+    width: 50%;
+    height: 50%;
+    background-color: white;
+    text-decoration:none;
+    border-radius: 10px;
+    font-family:'Poppins', sans-serif ;
+    padding: 15px 20px 15px 20px;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    top: -650px; /*900*/
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.textoCaja{
+    color: black;
+    text-decoration:none;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 5px 20px 15px 20px;
+    position: relative;
+    display: block;
+    text-align: center;
+}
+
+p{
+    font-size: 1.7em;
+    margin-top: -2px;
+}
+
+.cajaContenedora:hover .imagenGaleria {
+    transform: scale(1.015);
+}
+
+.cajaContenedora:hover .transparencia {
+    opacity: .6;
+}
+
+.cajaContenedora:hover .cajaContenedoraTexto{
+    top: -900px;
+    opacity: 1;
+}
+
+.separador{
+    border: #f6cddf 1px solid;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.container{
+    margin-top: 20px;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.acercaDeTitulo{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: .9em;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.acercaDeDescripcion{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: normal !important;
+    font-size: .9em;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.iconoBarraInfo {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+
+    transition: all 0.5s ease;
+}
+
+.iconoBarraInfo:hover {
+    color: #f30258;
+}
+
+
+.numeroTel{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: lighter;
+    font-size: .9em;
+    text-align: center;
+    text-decoration: none;
+
+    transition: all .5s ease;
+}
+
+.numeroTel:hover{
+    color: #f30258;
+}
+
+.texto{
+    font-family: 'Poppins', sans-serif;
+    color: #ffb9d3;
+    font-weight: lighter;
+    font-size: .8em;
+    text-align: center;
+    text-decoration: none;
+
+    transition: all .5s ease;
+}
+
+.col{
+    text-align: center;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+}
+
+.cajaRedes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.circuloFb{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #f6cddf;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 10px;
+   padding: 1px !important;
+
+    transition: 0.5s;
+}
+
+.iconoFacebook{
+    margin-top: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+.circuloFb:hover{
+    background-color: #3b5998;
+}
+
+.circuloFb:hover .iconoFacebook{
+    color: white;
+}
+
+.circuloIG{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #f6cddf;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+
+    transition: 0.5s;
+}
+
+.iconoIG{
+    margin-top: 10px;
+    font-size: 20px;
+    color:white;
+}
+
+.circuloIG:hover{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.circuloIG:hover .iconoIG{
+    color: white;
+}
+
+.btn{
+    background-color: transparent !important;
+}
+
+.btn:focus{
+    border: none!important;
+}

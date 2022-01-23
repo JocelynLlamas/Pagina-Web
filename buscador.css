@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    background: -webkit-linear-gradient(65deg, #9d1b61, #ffb2d0);
+    padding: 0px;
+    margin: 0px;
+}
+
+.enlace{
+    color: #9d1b61;
+    text-decoration: none;
+    transition: all .5s ease-out;
+}
+
+.enlace:hover{
+    color: #f30258;
+}
+
+.img {
+    width: 55%;
+    float: left;
+}
+
+.container{
+    margin-bottom: 3%;
+}
+
+.titulo{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.ubicacion{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 1.8em;
+    padding: 5%;
+    text-decoration: none !important;
+
+    transition: all .5s ease-out;
+}
+
+.ubicacion:hover{
+    color: #f6cddf;
+}
+
+.filtro{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+
+}
+
+::placeholder{
+    color: rgba(0, 0, 0, 0.54) !important;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 90%;
+}
+
+.inputFiltro{
+    background-color: #f6cddf;
+    border: none;
+    border-radius: 50px;
+    margin-left: 1%;
+    text-align: center;
+}
+
+.enviar{
+    background-color: #f6cddf;
+    border-radius: 50px;
+    border: none;
+    width: 5%;
+    font-size: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    color: white;
+    margin-left: 1%;
+    cursor: pointer;
+
+    transition: all .5s ease;
+}
+
+.enviar:hover{
+    background-color: white;
+    color: #ffa6c8;
+}
+
+.boton{
+    background-color: #f6cddf;
+    border-radius: 50px;
+    border: none;
+    width: 20%;
+    font-size: 90%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    color: white;
+    margin-left: 2%;
+    cursor: pointer;
+
+    transition: all .5s ease;
+}
+
+.boton:hover{
+    background-color: white;
+    color: #ffa6c8;
+}
+
+.informacion{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(175, 63, 136);
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.container-fluid{
+    background-color: white;
+    border-radius: 50px;
+    padding: 0px;
+}
